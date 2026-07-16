@@ -11,7 +11,7 @@
     "lint": "npm run lint:html && npm run lint:css && npm run lint:js && npm run validate:html"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^10.7.0",
     "eslint-plugin-security": "^3.0.1",
     "stylelint": "^17.14.0",
     "stylelint-config-standard": "^36.0.1",
