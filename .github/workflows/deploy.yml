@@ -26,7 +26,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Subir artefacto
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           # Ajustar si el sitio final queda en una subcarpeta (ej. "dist" o "public")
           path: "."
