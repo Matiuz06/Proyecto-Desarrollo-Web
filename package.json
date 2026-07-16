@@ -16,7 +16,7 @@
     "stylelint": "^17.14.0",
     "stylelint-config-standard": "^40.0.0",
     "htmlhint": "^1.1.4",
-    "html-validate": "^8.18.1",
+    "html-validate": "^11.5.6",
     "http-server": "^14.1.1"
   }
 }
