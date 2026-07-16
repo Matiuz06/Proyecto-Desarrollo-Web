@@ -1,0 +1,22 @@
+{
+  "name": "sitio-institucional",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web institucional - Taller Integrador de Sistemas",
+  "scripts": {
+    "lint:html": "htmlhint \"**/*.html\" --config .htmlhintrc",
+    "lint:css": "stylelint \"**/*.css\" --config .stylelintrc.json",
+    "lint:js": "eslint . --ext .js --config .eslintrc.json",
+    "validate:html": "html-validate \"**/*.html\"",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js && npm run validate:html"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-security": "^3.0.1",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1",
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.18.1",
+    "http-server": "^14.1.1"
+  }
+}

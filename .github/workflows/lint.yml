@@ -1,0 +1,37 @@
+name: Lint (HTML / CSS / JS)
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  lint:
+    name: Lint código
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm ci || npm install
+
+      - name: Lint HTML (HTMLHint)
+        run: npx htmlhint "**/*.html" --config .htmlhintrc || true
+        continue-on-error: false
+
+      - name: Lint CSS (stylelint)
+        run: npx stylelint "**/*.css" --config .stylelintrc.json
+
+      - name: Lint JS (ESLint)
+        run: npx eslint . --ext .js --config .eslintrc.json
+
+      - name: Validar HTML (html-validate)
+        run: npx html-validate "**/*.html"
