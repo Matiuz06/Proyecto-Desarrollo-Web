@@ -10,6 +10,9 @@ on:
     # aunque no haya cambios en el código
     - cron: "0 9 * * 1"
 
+permissions:
+  contents: read
+
 jobs:
   secrets-scan:
     name: Escaneo de secretos (Gitleaks)
