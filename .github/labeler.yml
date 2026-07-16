@@ -1,23 +1,23 @@
 "frontend: html":
   - changed-files:
-      - any-glob-to-any-file: "**/*.html"
+      - any-glob-match-pattern: "**/*.html"
 
 "frontend: css":
   - changed-files:
-      - any-glob-to-any-file: "**/*.css"
+      - any-glob-match-pattern: "**/*.css"
 
 "frontend: js":
   - changed-files:
-      - any-glob-to-any-file: "**/*.js"
+      - any-glob-match-pattern: "**/*.js"
 
 "assets":
   - changed-files:
-      - any-glob-to-any-file: ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.svg", "**/*.webp"]
+      - any-glob-match-pattern: ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.svg", "**/*.webp"]
 
 "ci/cd":
   - changed-files:
-      - any-glob-to-any-file: ".github/workflows/**"
+      - any-glob-match-pattern: ".github/workflows/**"
 
 "docs":
   - changed-files:
-      - any-glob-to-any-file: ["**/*.md", "docs/**"]
+      - any-glob-match-pattern: ["**/*.md", "docs/**"]
