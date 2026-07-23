@@ -14,7 +14,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-security": "^3.0.1",
     "stylelint": "^16.6.1",
-    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard": "^40.0.0",
     "htmlhint": "^1.1.4",
     "html-validate": "^8.18.1",
     "http-server": "^14.1.1"
