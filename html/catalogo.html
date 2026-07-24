@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Catálogo de cursos y servicios educativos y tecnológicos disponibles en Classia." />
+
+    <title>Classia — Catálogo de servicios</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">Classia</a>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li>
+            <a href="catalogo.html" aria-current="page"> Servicios </a>
+          </li>
+
+          <li>
+            <a href="dashboard-usuario.html"> Mi espacio </a>
+          </li>
+
+          <li>
+            <a href="carrito.html"> Carrito </a>
+          </li>
+
+          <li>
+            <a href="login.html"> Ingresar </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <p>Catálogo general</p>
+
+        <h1>
+          Servicios educativos
+          <br />
+          y tecnológicos
+        </h1>
+
+        <p>Explorá todos los servicios brindados</p>
+
+        <form action="catalogo.html" method="get" role="search">
+          <label for="busqueda"> Buscar servicios </label>
+
+          <input
+            type="search"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Servicio, profesional, institución o temática" />
+
+          <button type="submit">Buscar</button>
+        </form>
+      </header>
+
+      <div>
+        <aside aria-labelledby="titulo-filtros">
+          <h2 id="titulo-filtros">Filtrar servicios</h2>
+
+          <form action="catalogo.html" method="get">
+            <section aria-labelledby="filtro-categoria">
+              <h3 id="filtro-categoria">Categoría</h3>
+
+              <label for="categoria-curso">
+                <input
+                  type="checkbox"
+                  id="categoria-curso"
+                  name="categoria"
+                  value="curso" />
+
+                Cursos
+              </label>
+
+              <label for="categoria-proyecto">
+                <input
+                  type="checkbox"
+                  id="categoria-proyecto"
+                  name="categoria"
+                  value="proyecto-educativo" />
+
+                Proyectos educativos
+              </label>
+
+              <label for="categoria-formacion">
+                <input
+                  type="checkbox"
+                  id="categoria-formacion"
+                  name="categoria"
+                  value="formacion-institucional" />
+
+                Formación para empresas e instituciones
+              </label>
+
+              <label for="categoria-diseno-3d">
+                <input
+                  type="checkbox"
+                  id="categoria-diseno-3d"
+                  name="categoria"
+                  value="diseno-impresion-3d" />
+
+                Diseño e impresión 3D
+              </label>
+
+              <label for="categoria-robotica">
+                <input
+                  type="checkbox"
+                  id="categoria-robotica"
+                  name="categoria"
+                  value="robotica-automatizacion" />
+
+                Robótica y automatización
+              </label>
+
+              <label for="categoria-mentoria">
+                <input
+                  type="checkbox"
+                  id="categoria-mentoria"
+                  name="categoria"
+                  value="mentoria" />
+
+                Mentorías y acompañamiento
+              </label>
+            </section>
+
+            <section aria-labelledby="filtro-modalidad">
+              <h3 id="filtro-modalidad">Modalidad</h3>
+
+              <label for="modalidad-presencial">
+                <input
+                  type="checkbox"
+                  id="modalidad-presencial"
+                  name="modalidad"
+                  value="presencial" />
+
+                Presencial
+              </label>
+
+              <label for="modalidad-virtual">
+                <input
+                  type="checkbox"
+                  id="modalidad-virtual"
+                  name="modalidad"
+                  value="virtual" />
+
+                Virtual
+              </label>
+
+              <label for="modalidad-hibrida">
+                <input
+                  type="checkbox"
+                  id="modalidad-hibrida"
+                  name="modalidad"
+                  value="hibrida" />
+
+                Híbrida
+              </label>
+
+              <label for="modalidad-entrega">
+                <input
+                  type="checkbox"
+                  id="modalidad-entrega"
+                  name="modalidad"
+                  value="producto-entregable" />
+
+                Producto o entrega
+              </label>
+            </section>
+
+            <section aria-labelledby="filtro-precio">
+              <h3 id="filtro-precio">Precio</h3>
+
+              <label for="precio-gratuito">
+                <input
+                  type="checkbox"
+                  id="precio-gratuito"
+                  name="precio"
+                  value="gratuito" />
+
+                Gratuito
+              </label>
+
+              <label for="precio-menor-1000">
+                <input
+                  type="checkbox"
+                  id="precio-menor-1000"
+                  name="precio"
+                  value="menos-de-1000" />
+
+                Menos de $1.000
+              </label>
+
+              <label for="precio-1000-3000">
+                <input
+                  type="checkbox"
+                  id="precio-1000-3000"
+                  name="precio"
+                  value="entre-1000-y-3000" />
+
+                Entre $1.000 y $3.000
+              </label>
+
+              <label for="precio-mayor-3000">
+                <input
+                  type="checkbox"
+                  id="precio-mayor-3000"
+                  name="precio"
+                  value="mas-de-3000" />
+
+                Más de $3.000
+              </label>
+
+              <label for="precio-consultar">
+                <input
+                  type="checkbox"
+                  id="precio-consultar"
+                  name="precio"
+                  value="a-consultar" />
+
+                Precio a consultar
+              </label>
+            </section>
+
+            <section aria-labelledby="filtro-duracion">
+              <h3 id="filtro-duracion">Duración</h3>
+
+              <label for="duracion-corta">
+                <input
+                  type="checkbox"
+                  id="duracion-corta"
+                  name="duracion"
+                  value="menos-de-10-horas" />
+
+                Menos de 10 horas
+              </label>
+
+              <label for="duracion-media">
+                <input
+                  type="checkbox"
+                  id="duracion-media"
+                  name="duracion"
+                  value="entre-10-y-20-horas" />
+
+                Entre 10 y 20 horas
+              </label>
+
+              <label for="duracion-larga">
+                <input
+                  type="checkbox"
+                  id="duracion-larga"
+                  name="duracion"
+                  value="mas-de-20-horas" />
+
+                Más de 20 horas
+              </label>
+
+              <label for="duracion-personalizada">
+                <input
+                  type="checkbox"
+                  id="duracion-personalizada"
+                  name="duracion"
+                  value="personalizada" />
+
+                Duración personalizada
+              </label>
+            </section>
+
+            <button type="submit">Aplicar filtros</button>
+
+            <button type="reset">Limpiar filtros</button>
+          </form>
+        </aside>
+
+        <section aria-labelledby="titulo-servicios">
+          <header>
+            <h2 id="titulo-servicios">Servicios disponibles</h2>
+
+            <p>6 servicios encontrados</p>
+
+            <form action="catalogo.html" method="get">
+              <label for="ordenar"> Ordenar por </label>
+
+              <select id="ordenar" name="orden">
+                <option value="recomendados">Recomendados</option>
+
+                <option value="mejor-valorados">Mejor valorados</option>
+
+                <option value="mas-populares">Más populares</option>
+
+                <option value="precio-menor">Menor precio</option>
+
+                <option value="precio-mayor">Mayor precio</option>
+
+                <option value="mas-recientes">Más recientes</option>
+              </select>
+
+              <button type="submit">Ordenar</button>
+            </form>
+          </header>
+
+          <table>
+            <caption>
+              Catálogo de cursos y servicios educativos
+            </caption>
+
+            <tbody>
+              <tr>
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/curso-diseno.jpg"
+                        alt="Computadora con una interfaz de diseño educativo" />
+                    </a>
+
+                    <header>
+                      <p>Curso · Virtual</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Diseño visual para plataformas educativas
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Aprende a organizar contenidos, aplicar jerarquías
+                      visuales y diseñar interfaces accesibles para entornos
+                      educativos.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html"> Lucía Rodríguez </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Duración</dt>
+                        <dd>12 horas</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Virtual</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>4,8 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>Gratis</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Agregar al carrito</button>
+                  </article>
+                </td>
+
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/curso-programacion.jpg"
+                        alt="Código de programación mostrado en una computadora" />
+                    </a>
+
+                    <header>
+                      <p>Curso · Híbrido</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Desarrollo web con HTML, CSS y JavaScript
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Formación práctica para crear sitios web accesibles,
+                      responsivos y organizados con tecnologías fundamentales.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html">
+                        Instituto Tecnológico del Litoral
+                      </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Duración</dt>
+                        <dd>24 horas</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Híbrida</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>4,9 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>$1.990</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Agregar al carrito</button>
+                  </article>
+                </td>
+
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/proyecto-educativo.jpg"
+                        alt="Docentes planificando un proyecto educativo" />
+                    </a>
+
+                    <header>
+                      <p>Proyecto educativo · Presencial</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Diseño de proyectos tecnológicos para centros
+                          educativos
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Planificación y acompañamiento para implementar proyectos
+                      de programación, robótica o ciudadanía digital.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html"> Equipo EduLab </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Duración</dt>
+                        <dd>Personalizada</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Presencial</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>4,7 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>A consultar</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Solicitar contratación</button>
+                  </article>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/diseno-3d.jpg"
+                        alt="Modelo tridimensional preparado para impresión 3D" />
+                    </a>
+
+                    <header>
+                      <p>Diseño e impresión 3D · Producto</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Diseño e impresión de recursos didácticos 3D
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Modelado e impresión de piezas educativas, maquetas,
+                      prototipos y materiales adaptados a proyectos de aula.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html"> Taller 3D Norte </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Entrega</dt>
+                        <dd>Entre 5 y 10 días</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Producto entregable</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>4,6 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>Desde $850</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Agregar al carrito</button>
+                  </article>
+                </td>
+
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/robotica.jpg"
+                        alt="Robot educativo utilizado en una actividad de programación" />
+                    </a>
+
+                    <header>
+                      <p>Robótica y automatización · Presencial</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Taller de robótica educativa con micro:bit
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Taller para grupos educativos con actividades de sensores,
+                      programación, comunicación por radio y resolución de
+                      problemas.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html"> Martín Silva </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Duración</dt>
+                        <dd>8 horas</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Presencial</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>5 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>$2.400</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Agregar al carrito</button>
+                  </article>
+                </td>
+
+                <td>
+                  <article>
+                    <a href="detalle-servicio.html">
+                      <img
+                        src="assets/mentoria.jpg"
+                        alt="Profesional realizando una mentoría mediante videollamada" />
+                    </a>
+
+                    <header>
+                      <p>Mentoría · Virtual</p>
+
+                      <h3>
+                        <a href="detalle-servicio.html">
+                          Mentoría para proyectos de software educativos
+                        </a>
+                      </h3>
+                    </header>
+
+                    <p>
+                      Acompañamiento individual para definir requerimientos,
+                      arquitectura, base de datos y planificación de un
+                      proyecto.
+                    </p>
+
+                    <p>
+                      Publicado por
+                      <a href="perfil-proveedor.html"> Ana Fernández </a>
+                    </p>
+
+                    <dl>
+                      <div>
+                        <dt>Duración</dt>
+                        <dd>1 hora por sesión</dd>
+                      </div>
+
+                      <div>
+                        <dt>Modalidad</dt>
+                        <dd>Virtual</dd>
+                      </div>
+
+                      <div>
+                        <dt>Valoración</dt>
+                        <dd>4,9 de 5</dd>
+                      </div>
+
+                      <div>
+                        <dt>Precio</dt>
+                        <dd>$750</dd>
+                      </div>
+                    </dl>
+
+                    <a href="detalle-servicio.html"> Ver servicio </a>
+
+                    <button type="button">Agregar al carrito</button>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <nav aria-label="Paginación del catálogo">
+            <ul>
+              <li>
+                <a href="catalogo.html?page=1" aria-current="page"> 1 </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?page=2"> 2 </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?page=3"> 3 </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?page=2"> Siguiente </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Classia — Plataforma de comercialización de servicios educativos</p>
+
+      <nav aria-label="Navegación secundaria">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+
+          <li>
+            <a href="catalogo.html"> Servicios </a>
+          </li>
+
+          <li>
+            <a href="sobre-nosotros.html"> Acerca de </a>
+          </li>
+
+          <li>
+            <a href="contacto.html"> Contacto </a>
+          </li>
+
+          <li>
+            <a href="login.html"> Ingresar </a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>© 2026 Classia. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
