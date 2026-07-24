@@ -23,6 +23,9 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Instalar dependencias
         run: npm ci || npm install
 
