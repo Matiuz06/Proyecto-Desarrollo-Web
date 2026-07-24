@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Configuración inicial del perfil y las preferencias del usuario en Classia." />
+
+    <title>Classia — Primeros pasos</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <p>Configuración inicial</p>
+
+        <h1>Contanos qué buscás en Classia</h1>
+
+        <p>
+          Esta información permitirá organizar tu espacio y recomendarte cursos,
+          proyectos, mentorías y servicios relacionados con tus intereses.
+        </p>
+
+        <p>
+          Podrás modificar estas preferencias más adelante desde la
+          configuración de tu perfil.
+        </p>
+      </header>
+
+      <form action="dashboard_Usuarios.html" method="get">
+        <fieldset>
+          <legend>1. Datos personales y profesionales</legend>
+
+          <p>
+            Completá algunos datos básicos para personalizar tu experiencia.
+          </p>
+
+          <p>
+            <label for="nombre"> Nombre </label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="given-name"
+              required />
+          </p>
+
+          <p>
+            <label for="apellido"> Apellido </label>
+
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              autocomplete="family-name"
+              required />
+          </p>
+
+          <p>
+            <label for="profesion"> Profesión u ocupación </label>
+
+            <select id="profesion" name="profesion" required>
+              <option value="">Seleccioná una opción</option>
+
+              <option value="estudiante">Estudiante</option>
+
+              <option value="docente">Docente</option>
+
+              <option value="educador-no-formal">Educador o tallerista</option>
+
+              <option value="profesional-tecnologia">
+                Profesional de tecnología
+              </option>
+
+              <option value="desarrollador">Desarrollador de software</option>
+
+              <option value="disenador">Diseñador</option>
+
+              <option value="especialista-robotica">
+                Especialista en robótica o automatización
+              </option>
+
+              <option value="emprendedor">Emprendedor</option>
+
+              <option value="representante-institucion">
+                Representante de una institución
+              </option>
+
+              <option value="empresa">Representante de una empresa</option>
+
+              <option value="otro">Otra ocupación</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="otra-profesion"> Otra profesión u ocupación </label>
+
+            <input
+              type="text"
+              id="otra-profesion"
+              name="otra_profesion"
+              placeholder="Completá este campo si seleccionaste Otra ocupación" />
+          </p>
+
+          <p>
+            <label for="institucion">
+              Institución, empresa o emprendimiento
+            </label>
+
+            <input
+              type="text"
+              id="institucion"
+              name="institucion"
+              autocomplete="organization"
+              placeholder="Opcional" />
+          </p>
+
+          <p>
+            <label for="pais"> País </label>
+
+            <input
+              type="text"
+              id="pais"
+              name="pais"
+              autocomplete="country-name"
+              value="Uruguay" />
+          </p>
+
+          <p>
+            <label for="departamento"> Departamento o localidad </label>
+
+            <input
+              type="text"
+              id="departamento"
+              name="departamento"
+              autocomplete="address-level1"
+              placeholder="Ejemplo: Salto" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. ¿Cómo pensás utilizar la plataforma?</legend>
+
+          <p>Podés seleccionar más de una opción.</p>
+
+          <p>
+            <label for="uso-explorar">
+              <input
+                type="checkbox"
+                id="uso-explorar"
+                name="uso_plataforma[]"
+                value="explorar-servicios" />
+
+              Explorar cursos y servicios educativos
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-contratar">
+              <input
+                type="checkbox"
+                id="uso-contratar"
+                name="uso_plataforma[]"
+                value="contratar-servicios" />
+
+              Contratar servicios para mí
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-institucion">
+              <input
+                type="checkbox"
+                id="uso-institucion"
+                name="uso_plataforma[]"
+                value="contratar-institucion" />
+
+              Contratar formación o servicios para una institución
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-publicar">
+              <input
+                type="checkbox"
+                id="uso-publicar"
+                name="uso_plataforma[]"
+                value="publicar-servicios" />
+
+              Publicar y comercializar mis propios servicios
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-aprender">
+              <input
+                type="checkbox"
+                id="uso-aprender"
+                name="uso_plataforma[]"
+                value="formacion-personal" />
+
+              Ampliar mi formación profesional
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-asesoramiento">
+              <input
+                type="checkbox"
+                id="uso-asesoramiento"
+                name="uso_plataforma[]"
+                value="buscar-asesoramiento" />
+
+              Buscar mentoría o acompañamiento especializado
+            </label>
+          </p>
+
+          <p>
+            <label for="uso-proyectos">
+              <input
+                type="checkbox"
+                id="uso-proyectos"
+                name="uso_plataforma[]"
+                value="desarrollar-proyectos" />
+
+              Encontrar apoyo para desarrollar un proyecto
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Categorías de interés</legend>
+
+          <p>
+            Seleccioná las categorías que te gustaría encontrar en tus
+            recomendaciones.
+          </p>
+
+          <p>
+            <label for="categoria-cursos">
+              <input
+                type="checkbox"
+                id="categoria-cursos"
+                name="categorias[]"
+                value="cursos" />
+
+              Cursos presenciales, virtuales o híbridos
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-proyectos">
+              <input
+                type="checkbox"
+                id="categoria-proyectos"
+                name="categorias[]"
+                value="proyectos-educativos" />
+
+              Proyectos educativos
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-formacion">
+              <input
+                type="checkbox"
+                id="categoria-formacion"
+                name="categorias[]"
+                value="formacion-institucional" />
+
+              Formación para empresas e instituciones
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-3d">
+              <input
+                type="checkbox"
+                id="categoria-3d"
+                name="categorias[]"
+                value="diseno-impresion-3d" />
+
+              Diseño e impresión 3D
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-robotica">
+              <input
+                type="checkbox"
+                id="categoria-robotica"
+                name="categorias[]"
+                value="robotica-automatizacion" />
+
+              Robótica y automatización
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-mentorias">
+              <input
+                type="checkbox"
+                id="categoria-mentorias"
+                name="categorias[]"
+                value="mentorias" />
+
+              Mentorías y acompañamiento especializado
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-programacion">
+              <input
+                type="checkbox"
+                id="categoria-programacion"
+                name="categorias[]"
+                value="programacion" />
+
+              Programación y desarrollo web
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-diseno">
+              <input
+                type="checkbox"
+                id="categoria-diseno"
+                name="categorias[]"
+                value="diseno" />
+
+              Diseño gráfico, multimedia y experiencia de usuario
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-educacion">
+              <input
+                type="checkbox"
+                id="categoria-educacion"
+                name="categorias[]"
+                value="educacion" />
+
+              Educación, didáctica y evaluación
+            </label>
+          </p>
+
+          <p>
+            <label for="categoria-gestion">
+              <input
+                type="checkbox"
+                id="categoria-gestion"
+                name="categorias[]"
+                value="gestion" />
+
+              Gestión institucional y de proyectos
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Modalidades preferidas</legend>
+
+          <p>
+            <label for="modalidad-virtual">
+              <input
+                type="checkbox"
+                id="modalidad-virtual"
+                name="modalidades[]"
+                value="virtual" />
+
+              Virtual
+            </label>
+          </p>
+
+          <p>
+            <label for="modalidad-presencial">
+              <input
+                type="checkbox"
+                id="modalidad-presencial"
+                name="modalidades[]"
+                value="presencial" />
+
+              Presencial
+            </label>
+          </p>
+
+          <p>
+            <label for="modalidad-hibrida">
+              <input
+                type="checkbox"
+                id="modalidad-hibrida"
+                name="modalidades[]"
+                value="hibrida" />
+
+              Híbrida
+            </label>
+          </p>
+
+          <p>
+            <label for="modalidad-entregable">
+              <input
+                type="checkbox"
+                id="modalidad-entregable"
+                name="modalidades[]"
+                value="producto-entregable" />
+
+              Producto o trabajo entregable
+            </label>
+          </p>
+
+          <p>
+            <label for="modalidad-indiferente">
+              <input
+                type="checkbox"
+                id="modalidad-indiferente"
+                name="modalidades[]"
+                value="sin-preferencia" />
+
+              No tengo una modalidad preferida
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. Nivel de experiencia</legend>
+
+          <p>
+            <label for="nivel-inicial">
+              <input
+                type="radio"
+                id="nivel-inicial"
+                name="nivel_experiencia"
+                value="inicial"
+                required />
+
+              Inicial: estoy comenzando o quiero aprender desde cero
+            </label>
+          </p>
+
+          <p>
+            <label for="nivel-intermedio">
+              <input
+                type="radio"
+                id="nivel-intermedio"
+                name="nivel_experiencia"
+                value="intermedio" />
+
+              Intermedio: ya tengo conocimientos o experiencia previa
+            </label>
+          </p>
+
+          <p>
+            <label for="nivel-avanzado">
+              <input
+                type="radio"
+                id="nivel-avanzado"
+                name="nivel_experiencia"
+                value="avanzado" />
+
+              Avanzado: busco especialización o servicios profesionales
+            </label>
+          </p>
+
+          <p>
+            <label for="nivel-variable">
+              <input
+                type="radio"
+                id="nivel-variable"
+                name="nivel_experiencia"
+                value="depende-categoria" />
+
+              Mi nivel depende de la categoría
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>6. Preferencias de contratación</legend>
+
+          <p>
+            <label for="presupuesto"> Presupuesto habitual </label>
+
+            <select id="presupuesto" name="presupuesto">
+              <option value="">Prefiero no indicarlo</option>
+
+              <option value="gratuito">
+                Busco principalmente opciones gratuitas
+              </option>
+
+              <option value="menos-de-1000">Menos de $1.000</option>
+
+              <option value="entre-1000-y-3000">Entre $1.000 y $3.000</option>
+
+              <option value="entre-3000-y-10000">Entre $3.000 y $10.000</option>
+
+              <option value="mas-de-10000">Más de $10.000</option>
+
+              <option value="a-consultar">Depende del servicio</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="duracion-preferida">
+              Duración preferida de cursos o formaciones
+            </label>
+
+            <select id="duracion-preferida" name="duracion_preferida">
+              <option value="">Sin preferencia</option>
+
+              <option value="menos-de-10-horas">Menos de 10 horas</option>
+
+              <option value="entre-10-y-20-horas">Entre 10 y 20 horas</option>
+
+              <option value="mas-de-20-horas">Más de 20 horas</option>
+
+              <option value="personalizada">Duración personalizada</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="servicios-gratuitos">
+              <input
+                type="checkbox"
+                id="servicios-gratuitos"
+                name="preferencias_contratacion[]"
+                value="mostrar-gratuitos" />
+
+              Mostrar primero los servicios gratuitos
+            </label>
+          </p>
+
+          <p>
+            <label for="mejor-valorados">
+              <input
+                type="checkbox"
+                id="mejor-valorados"
+                name="preferencias_contratacion[]"
+                value="mostrar-mejor-valorados" />
+
+              Priorizar servicios mejor valorados
+            </label>
+          </p>
+
+          <p>
+            <label for="servicios-locales">
+              <input
+                type="checkbox"
+                id="servicios-locales"
+                name="preferencias_contratacion[]"
+                value="mostrar-servicios-locales" />
+
+              Mostrar servicios presenciales cercanos a mi ubicación
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>7. Comunicación y notificaciones</legend>
+
+          <p>Elegí qué información querés recibir.</p>
+
+          <p>
+            <label for="notificacion-recomendaciones">
+              <input
+                type="checkbox"
+                id="notificacion-recomendaciones"
+                name="notificaciones[]"
+                value="recomendaciones"
+                checked />
+
+              Recomendaciones relacionadas con mis intereses
+            </label>
+          </p>
+
+          <p>
+            <label for="notificacion-promociones">
+              <input
+                type="checkbox"
+                id="notificacion-promociones"
+                name="notificaciones[]"
+                value="promociones" />
+
+              Promociones, descuentos y cupones
+            </label>
+          </p>
+
+          <p>
+            <label for="notificacion-mensajes">
+              <input
+                type="checkbox"
+                id="notificacion-mensajes"
+                name="notificaciones[]"
+                value="mensajes"
+                checked />
+
+              Mensajes de clientes o proveedores
+            </label>
+          </p>
+
+          <p>
+            <label for="notificacion-contrataciones">
+              <input
+                type="checkbox"
+                id="notificacion-contrataciones"
+                name="notificaciones[]"
+                value="contrataciones"
+                checked />
+
+              Confirmaciones y novedades sobre contrataciones
+            </label>
+          </p>
+
+          <p>
+            <label for="notificacion-nuevos-servicios">
+              <input
+                type="checkbox"
+                id="notificacion-nuevos-servicios"
+                name="notificaciones[]"
+                value="nuevos-servicios" />
+
+              Nuevos servicios de las categorías seleccionadas
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>8. Perfil como proveedor</legend>
+
+          <p>
+            Completá esta sección si también pensás publicar y comercializar
+            servicios.
+          </p>
+
+          <p>
+            <label for="quiere-publicar">
+              <input
+                type="checkbox"
+                id="quiere-publicar"
+                name="quiere_publicar"
+                value="si" />
+
+              Quiero publicar servicios en Classia
+            </label>
+          </p>
+
+          <p>
+            <label for="tipo-proveedor"> Tipo de proveedor </label>
+
+            <select id="tipo-proveedor" name="tipo_proveedor">
+              <option value="">Seleccioná una opción</option>
+
+              <option value="docente">Docente</option>
+
+              <option value="profesional-independiente">
+                Profesional independiente
+              </option>
+
+              <option value="institucion-educativa">
+                Institución educativa
+              </option>
+
+              <option value="empresa">Empresa</option>
+
+              <option value="emprendimiento">Emprendimiento</option>
+
+              <option value="equipo-profesional">
+                Equipo de profesionales
+              </option>
+            </select>
+          </p>
+
+          <p>
+            <label for="descripcion-profesional">
+              Presentación profesional
+            </label>
+
+            <textarea
+              id="descripcion-profesional"
+              name="descripcion_profesional"
+              rows="6"
+              maxlength="700"
+              placeholder="Contá brevemente tu experiencia, formación y los servicios que podrías ofrecer"></textarea>
+          </p>
+
+          <p>
+            <label for="sitio-web">
+              Sitio web, portafolio o perfil profesional
+            </label>
+
+            <input
+              type="url"
+              id="sitio-web"
+              name="sitio_web"
+              placeholder="https://ejemplo.com" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>9. Privacidad y personalización</legend>
+
+          <p>
+            Classia utilizará las preferencias seleccionadas para organizar el
+            catálogo y mostrar recomendaciones relacionadas.
+          </p>
+
+          <p>
+            <label for="acepta-personalizacion">
+              <input
+                type="checkbox"
+                id="acepta-personalizacion"
+                name="acepta_personalizacion"
+                value="si"
+                required />
+
+              Acepto que mis intereses y mi actividad se utilicen para
+              personalizar las recomendaciones dentro de la plataforma.
+            </label>
+          </p>
+
+          <p>
+            <label for="acepta-privacidad">
+              <input
+                type="checkbox"
+                id="acepta-privacidad"
+                name="acepta_privacidad"
+                value="si"
+                required />
+
+              Confirmo que leí y acepto la
+              <a href="politica-privacidad.html"> política de privacidad </a>
+              y el tratamiento de mis datos personales.
+            </label>
+          </p>
+        </fieldset>
+
+        <div>
+          <button type="submit">Guardar y continuar</button>
+
+          <a href="dashboard_Usuarios.html"> Omitir por ahora </a>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Classia — Plataforma de comercialización de servicios educativos</p>
+
+      <nav aria-label="Navegación secundaria">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+
+          <li>
+            <a href="catalogo.html">Servicios</a>
+          </li>
+
+          <li>
+            <a href="politica-privacidad.html"> Privacidad </a>
+          </li>
+
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>© 2026 Classia. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
